@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="app.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compton Community Hub — Knowledge Is Power</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-p
-  
+    <header>
+        <h1>Compton Community Hub</h1>
+        <p class="sub">Knowledge · Resources · Empowermentt</p>
+    </header>
+
+    <div id="api-bar">
+        <div class="api-item wide">
+            <span class="api-label">About Compton</span>
+            <span class="api-data" id="wiki-summary">Loading...</span>
+        </div>
+
+    </div>
+
+    <div id="pulse-bar">
+        <div class="pulse-item" id="geo-item">
+            <span class="pulse-label">📍 Your Location</span>
+            <span class="pulse-data" id="geo-data">See how close you are to Compton and confirm these resources serve your area.</span>
+            <button id="geo-btn" class="pulse-btn">Locate Me</button>
+        </div>
+        <div class="pulse-item" id="fact-item">
+            <span class="pulse-label">✨ Compton Pride</span>
+            <span class="pulse-data" id="fact-data">Loading...</span>
+            <button id="fact-btn" class="pulse-btn">Next Fact →</button>
+        </div>
+        <div class="pulse-item" id="notif-item">
+            <span class="pulse-label">🔔 Push Love</span>
+            <span class="pulse-data">Get a Compton affirmation or pride fact sent right to you.</span>
+            <button id="notif-btn" class="pulse-btn">Send One Now</button>
+        </div>
+    </div>
+
+    <div id="badges-bar">
+        <span class="badges-label">🏆 Your Progress — explore the hub to earn badges</span>
+        <div id="badges-list"></div>
+    </div>
+
+    <div id="controls-bar">
+        <input id="search-input" type="text" placeholder="Search resources..." autocomplete="off" />
+        <span id="result-count"></span>
+    </div>
+
+    <nav id="tabs"></nav>
+
+    <main id="content"></main>
+
+    <footer>
+        <p>Knowledge is power. Share what you learn. Help your neighbor.</p>
+        <p class="lang">El conocimiento es poder. Comparte lo que aprendes. Ayuda a tu vecino.</p>
+    </footer>
+
+    <button id="scroll-top" title="Back to top">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
